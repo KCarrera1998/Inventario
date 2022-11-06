@@ -17,13 +17,14 @@ public class ConectarMYSQL {
         
     }
     
-    public String EjecutarComando (String textosQL)
+    
+    public String EjecutarComando (String textoSQL)
     {
     try
     {
         DriverManager.registerDriver (new com.mysql.jdbc.Driver ());
         Connection conexion = DriverManager.getConnection ("jdbc:mysql://localhost/alumno/","root","Umg$2019");
-        Statement s conexion.createStatement ();
+        Statement s = conexion.createStatement ();
         
         s.executeUpdate(textoSQL);
     }

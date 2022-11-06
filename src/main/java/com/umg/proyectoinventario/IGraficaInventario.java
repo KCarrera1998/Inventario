@@ -135,7 +135,7 @@ public class IGraficaInventario extends JFrame {
     
     public String iInventario ()
     {
-        Inventario in=new Producto (campoText1.getText(), Integer, campoText2.getText(), Date, campoText3.getText(), Date, campoText4.getText(), Integer, campoText5.getText(), Integer, campoText6.getText(), Integer, campoText7.getText(), Integer, campoText8.getText(), Integer);
+        Inventario in=new Producto (campoText1.getText(), Integer, campoText2.getText(), String, campoText3.getText(), String, campoText4.getText(), Integer, campoText5.getText(), Integer, campoText6.getText(), Integer, campoText7.getText(), Integer, campoText8.getText(), Integer);
         return in. Insertar();
     }
     
