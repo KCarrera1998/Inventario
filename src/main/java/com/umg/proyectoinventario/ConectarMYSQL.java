@@ -17,7 +17,6 @@ public class ConectarMYSQL {
         
     }
     
-    
     public String EjecutarComando (String textoSQL)
     {
     try
